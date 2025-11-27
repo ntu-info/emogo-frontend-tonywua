@@ -4,18 +4,15 @@
     "plugins": [
       "expo-router"
     ],
+    "updates": {
+      "enabled": false
+    },
     "name": "expo-router-mwe",
     "slug": "expo-router-mwe",
     "android": {
       "package": "com.spiketren.exporoutermwe"
     },
-    "extra": {
-      "router": {},
-      "eas": {
-        "projectId": "7918e76f-59e9-45c4-aae4-c99cec64cfac"
-      }
-    },
-    "owner": "spiketren",
+    /* 已移除 `owner` 與 `extra.eas.projectId`，避免本機開發期間被遠端 OTA 更新綁定 */
     "ios": {
       "bundleIdentifier": "com.spiketren.exporoutermwe",
       "infoPlist": {
